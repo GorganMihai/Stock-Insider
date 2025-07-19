@@ -105,7 +105,57 @@ The CLI offers five options to manage the watch list:
 #### AI Analysis  
 ![AI Analysis](img/ai.png)
 
+---
 
+## Installation
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/GorganMihai/Stock-Insider.git   
+   ```
 
+2. **Install Python environment and dependencies**
+   ```bash
+   make install
+   ```
+
+3. **Install and configure AWS CLI**
+   
+   **For macOS:**
+   ```bash
+   # Using Homebrew (recommended)
+   brew install awscli
+   
+   # Or using pip
+   pip install awscli
+   ```
+   
+   **For Windows:**
+   ```powershell
+   # Using Chocolatey
+   choco install awscli
+   
+   # Or download and install from AWS website
+   # https://aws.amazon.com/cli/
+   
+   # Or using pip
+   pip install awscli
+   ```
+   
+   **Configure AWS credentials (both platforms):**
+   ```bash
+   aws configure
+   ```
+
+4. **Install the environment on AWS using Terraform**
+   ```bash
+   make terraform-init
+   make terraform-plan
+   make terraform-apply
+   ```
+
+5. **Start the application**
+   ```bash
+   make run
+   ```
 
